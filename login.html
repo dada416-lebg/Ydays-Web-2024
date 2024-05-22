@@ -22,7 +22,7 @@
     <form class="container-fixed shadow-lg rounded p-5 bg-white">       
     <div class="row">
       <div class="col">
-      <h2 class="fixed-heading text-center fw-bold mb-4">Connexion</h2>
+        <h2 class="fixed-heading text-center fw-bold mb-4">LABO DEV WEB</h2>
       <form>
         <div class="form-group mb-4">
         <label for="email" class="form-label">Adresse e-mail</label>
@@ -32,10 +32,6 @@
         <label for="password" class="form-label">Mot de passe</label>
         <div class="input-group">
           <input type="password" class="form-control rounded bg-light" id="password" placeholder="Mot de passe">
-          <button type="button" id="togglePassword" class="btn btn-outline-secondary rounded">
-          <i id="eyeIcon" class="bi bi-eye"></i>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
-          </button>
         </div>
         </div>
         <div class="d-grid gap-2">
@@ -47,23 +43,5 @@
     </div>
     </form>
   </div>
-
-  <script>
-    const togglePassword = document.getElementById('togglePassword');
-    const password = document.getElementById('password');
-    const eyeIcon = document.getElementById('eyeIcon');
-
-    togglePassword.addEventListener('click', function() {
-    if (password.type === 'password') {
-      password.type = 'text';
-      eyeIcon.classList.remove('bi-eye');
-      eyeIcon.classList.add('bi-eye-slash');
-    } else {
-      password.type = 'password';
-      eyeIcon.classList.remove('bi-eye-slash');
-      eyeIcon.classList.add('bi-eye');
-    }
-    });
-  </script>
 </body>
 </html>
